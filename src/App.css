@@ -1,0 +1,17 @@
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+}
+
+img {
+    border-style: solid;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
