@@ -9,7 +9,7 @@ function About() {
         <section className = "p-2">
           <h2 className="text-4xl font-bold pb-2 text-yellow-200">Intro</h2>
           <div className="pb-4 text-xl indent-2">
-            I'm a software developer based in Jharkhand, India. Have 7+ years of
+            I'm a software developer based in Jharkhand, India. Have 5+ years of
             hands-on experiences in web &amp; desktop applications. Working as
             an independent contractor &amp; full stack developer for a local
             agency.
