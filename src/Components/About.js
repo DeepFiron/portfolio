@@ -1,42 +1,55 @@
 import React from "react";
-import './About.css'
+import "./About.css";
 
 function About() {
   return (
     <>
-      <h1 className = "hidden lg:block opacity-20 text-6xl pointer-events-none absolute bottom-8 right-3 ">ABOUT</h1>
+      <h1 className="hidden lg:block opacity-20 text-6xl pointer-events-none absolute bottom-8 right-3 ">
+        ABOUT
+      </h1>
       <article className="my-2 lg:my-6 lg:mr-16 lg:ml-4 text-justify">
-        <section className = "p-2">
+        <section className="p-2">
           <h2 className="text-4xl font-bold pb-2 text-yellow-200">Intro</h2>
           <div className="pb-4 text-xl indent-2">
             I'm a software developer based in Jharkhand, India. Have 5+ years of
-            hands-on experiences in web &amp; desktop applications. Working as
-            an independent contractor &amp; full stack developer for a local
-            agency.
+            experiences in software industry. Currently working with Sopra
+            Steria as web developer.
           </div>
           <div className="pb-4 text-xl indent-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-            voluptatibus vel dolor obcaecati nihil, quos aliquid nostrum aliquam
-            aut, reprehenderit, eaque doloribus ratione ipsum voluptate
-            aspernatur? Laborum voluptates aliquid facilis!
-          </div>
-          <div className="pb-4 text-xl indent-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-            officia dicta alias saepe velit minima eos doloremque delectus
-            assumenda quasi sunt ea commodi fuga asperiores voluptatem natus,
-            architecto ducimus similique voluptatum eveniet? Unde, dicta.
+            I{" "}
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              class="inline text-red-600 align-middle"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path fill="none" d="M0 0H24V24H0z"></path>
+                <path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path>
+              </g>
+            </svg>{" "}
+            to code, experiment, contribute &amp; learn new technologies. I am
+            passionate about building complex tools, beautiful UIs, automation
+            apps that improves productivity, empower people &amp; businesses,
+            &amp; help them transform their ideas to a viable &amp; marketable
+            product.
           </div>
         </section>
-        <section className = "p-2">
+        <section className="p-2">
           <h2 className="text-4xl font-bold pb-2 text-yellow-200">Skills</h2>
           <div className="pb-4 text-xl indent-2">
-            I'm capable of building highly interactive, modular, scalable &amp;
-            maintainable applications. I'm a backend heavy developer with fairly
-            good frontend skills.
+            I'm capable of building interactive, modular, scalable &amp;
+            maintainable applications. I've good frontend skills and working on backend as well.
           </div>
-          <h3 className="text-2xl font-semibold p-1.5 text-yellow-200 ">Soft Skills</h3>
+          <h3 className="text-2xl font-semibold p-1.5 text-yellow-200 ">
+            Soft Skills
+          </h3>
           <ul className="pb-4 ">
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -52,9 +65,11 @@ function About() {
                   <path d="M1 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H1zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM21.548.784A13.942 13.942 0 0 1 23 7c0 2.233-.523 4.344-1.452 6.216l-1.645-1.196A11.955 11.955 0 0 0 21 7c0-1.792-.393-3.493-1.097-5.02L21.548.784zm-3.302 2.4A9.97 9.97 0 0 1 19 7a9.97 9.97 0 0 1-.754 3.816l-1.677-1.22A7.99 7.99 0 0 0 17 7a7.99 7.99 0 0 0-.43-2.596l1.676-1.22z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">Efficient communication skills</span>
+              <span className="justify-self-stretch col-span-11">
+                Efficient communication skills
+              </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -70,9 +85,11 @@ function About() {
                   <path d="M16 2v2h-1v3.243c0 1.158.251 2.301.736 3.352l4.282 9.276c.347.753.018 1.644-.734 1.99-.197.092-.411.139-.628.139H5.344c-.828 0-1.5-.672-1.5-1.5 0-.217.047-.432.138-.629l4.282-9.276C8.749 9.545 9 8.401 9 7.243V4H8V2h8zm-2.612 8.001h-2.776c-.104.363-.23.721-.374 1.071l-.158.361L6.125 20h11.749l-3.954-8.567c-.214-.464-.392-.943-.532-1.432zM11 7.243c0 .253-.01.506-.029.758h2.058c-.01-.121-.016-.242-.021-.364L13 7.243V4h-2v3.243z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">Assertive, innovative &amp; long-term thinker</span>
+              <span className="justify-self-stretch col-span-11">
+                Assertive, innovative &amp; long-term thinker
+              </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -91,11 +108,11 @@ function About() {
                   ></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">
+              <span className="justify-self-stretch col-span-11">
                 Self-organized &amp; able to work independently or within a team
               </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -111,11 +128,11 @@ function About() {
                   <path d="M15.199 9.945a2.6 2.6 0 0 1-.79-1.551l-.403-3.083-2.73 1.486a2.6 2.6 0 0 1-1.72.273L6.5 6.5l.57 3.056a2.6 2.6 0 0 1-.273 1.72l-1.486 2.73 3.083.403a2.6 2.6 0 0 1 1.55.79l2.138 2.257 1.336-2.807a2.6 2.6 0 0 1 1.23-1.231l2.808-1.336-2.257-2.137zm.025 5.563l-2.213 4.65a.6.6 0 0 1-.977.155l-3.542-3.739a.6.6 0 0 0-.357-.182l-5.107-.668a.6.6 0 0 1-.449-.881l2.462-4.524a.6.6 0 0 0 .062-.396L4.16 4.86a.6.6 0 0 1 .7-.7l5.063.943a.6.6 0 0 0 .396-.062l4.524-2.462a.6.6 0 0 1 .881.45l.668 5.106a.6.6 0 0 0 .182.357l3.739 3.542a.6.6 0 0 1-.155.977l-4.65 2.213a.6.6 0 0 0-.284.284zm.797 1.927l1.414-1.414 4.243 4.242-1.415 1.415-4.242-4.243z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">
+              <span className="justify-self-stretch col-span-11">
                 Always curious, humble &amp; motivated for new challanges
               </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -134,14 +151,16 @@ function About() {
                   ></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">
+              <span className="justify-self-stretch col-span-11">
                 Open to receive &amp; deliver clear &amp; constructive criticism
               </span>
             </li>
           </ul>
-          <h3 className="text-2xl font-semibold p-1.5 text-yellow-200 ">Hard Skills</h3>
+          <h3 className="text-2xl font-semibold p-1.5 text-yellow-200 ">
+            Hard Skills
+          </h3>
           <ul className="skills-list">
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -157,9 +176,11 @@ function About() {
                   <path d="M16 16c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM6 12c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm10 6c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1zM6 14c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm8.5-12C17.538 2 20 4.462 20 7.5S17.538 13 14.5 13 9 10.538 9 7.5 11.462 2 14.5 2zm0 2C12.567 4 11 5.567 11 7.5s1.567 3.5 3.5 3.5S18 9.433 18 7.5 16.433 4 14.5 4z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">Problem solving &amp; automation skills</span>
+              <span className="justify-self-stretch col-span-11">
+                Problem solving 
+              </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -175,9 +196,11 @@ function About() {
                   <path d="M13.196 2.268l3.25 5.63c.276.477.112 1.089-.366 1.365l-1.3.75 1.001 1.732-1.732 1-1-1.733-1.299.751c-.478.276-1.09.112-1.366-.366L8.546 8.215C6.494 8.837 5 10.745 5 13c0 .625.115 1.224.324 1.776C6.1 14.284 7.016 14 8 14c1.684 0 3.174.833 4.08 2.109l7.688-4.439 1 1.732-7.878 4.549c.072.338.11.69.11 1.049 0 .343-.034.677-.1 1H21v2l-17 .001c-.628-.836-1-1.875-1-3.001 0-1.007.298-1.945.81-2.73C3.293 15.295 3 14.182 3 13c0-2.995 1.881-5.551 4.527-6.55l-.393-.682c-.552-.957-.225-2.18.732-2.732l2.598-1.5c.957-.552 2.18-.225 2.732.732zM8 16c-1.657 0-3 1.343-3 3 0 .35.06.687.17 1h5.66c.11-.313.17-.65.17-1 0-1.657-1.343-3-3-3zm3.464-12.732l-2.598 1.5 2.75 4.763 2.598-1.5-2.75-4.763z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">Diligence &amp; attention to detail</span>
+              <span className="justify-self-stretch col-span-11">
+                Diligence &amp; attention to detail
+              </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4 hidden">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -196,11 +219,11 @@ function About() {
                   ></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">
+              <span className="justify-self-stretch col-span-11">
                 Ability to work &amp; juggle between multiple projects
               </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -216,9 +239,11 @@ function About() {
                   <path d="M4 18v-3.7a1.5 1.5 0 0 0-1.5-1.5H2v-1.6h.5A1.5 1.5 0 0 0 4 9.7V6a3 3 0 0 1 3-3h1v2H7a1 1 0 0 0-1 1v4.1A2 2 0 0 1 4.626 12 2 2 0 0 1 6 13.9V18a1 1 0 0 0 1 1h1v2H7a3 3 0 0 1-3-3zm16-3.7V18a3 3 0 0 1-3 3h-1v-2h1a1 1 0 0 0 1-1v-4.1a2 2 0 0 1 1.374-1.9A2 2 0 0 1 18 10.1V6a1 1 0 0 0-1-1h-1V3h1a3 3 0 0 1 3 3v3.7a1.5 1.5 0 0 0 1.5 1.5h.5v1.6h-.5a1.5 1.5 0 0 0-1.5 1.5z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">Lean &amp; Agile Software Development Skill</span>
+              <span className="justify-self-stretch col-span-11">
+                Lean &amp; Agile Software Development Skill
+              </span>
             </li>
-            <li className = "text-xl grid grid-cols-12 pb-4 gap-x-4">
+            <li className="text-xl grid grid-cols-12 pb-4 gap-x-4">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -234,136 +259,138 @@ function About() {
                   <path d="M4.873 3h14.254a1 1 0 0 1 .809.412l3.823 5.256a.5.5 0 0 1-.037.633L12.367 21.602a.5.5 0 0 1-.706.028c-.007-.006-3.8-4.115-11.383-12.329a.5.5 0 0 1-.037-.633l3.823-5.256A1 1 0 0 1 4.873 3zm.51 2l-2.8 3.85L12 19.05 21.417 8.85 18.617 5H5.383z"></path>
                 </g>
               </svg>
-              <span className = "justify-self-stretch col-span-11">
+              <span className="justify-self-stretch col-span-11">
                 Ability to create a strategy/vision for a product, convey that
-                strategy in the form of a short- &amp; long-term product
+                strategy in the form of a short &amp; long-term product
                 roadmap, prioritizing features based on level of importance.
               </span>
             </li>
           </ul>
-          <h3 className="text-2xl font-semibold p-1.5 text-yellow-200 ">Technical Skills</h3>
+          <h3 className="text-2xl font-semibold p-1.5 text-yellow-200 ">
+            Technical Skills
+          </h3>
           <ul className="flex flex-wrap justify-around">
             {" "}
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center hidden">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M10.372 13.069h-3.967l-1.715 8.684h2.037l0.429-2.251h1.93c1.822 0.107 3.86-1.394 3.86-3.967 0-1.501-0.858-2.359-2.573-2.466zM8.871 17.894h-1.287l0.536-3.216h1.394c0.75 0 1.287 0.322 1.287 0.965-0.107 1.823-0.965 2.144-1.93 2.251zM17.555 13.069h-1.93l0.429-2.251h-2.037l-1.715 8.684h2.037l0.965-4.824h1.608c0.751 0 0.751 0.322 0.643 0.858l-0.75 3.967h2.144l0.75-4.396c0.214-1.072-0.429-1.93-2.144-2.037zM24.738 13.069h-3.967l-1.715 8.684h2.037l0.429-2.251h1.93c1.823 0.107 3.86-1.394 3.86-3.967 0-1.501-0.858-2.359-2.573-2.466zM23.237 17.894h-1.287l0.536-3.216h1.394c0.751 0 1.287 0.322 1.287 0.965-0.107 1.823-0.965 2.144-1.93 2.251z"></path>
               </svg>
-              <span className = "text-base">PHP</span>
+              <span className="text-base">PHP</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z"></path>
               </svg>
-              <span className = "text-base">JavaScript</span>
+              <span className="text-base">JavaScript</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M12.557 23.22c0 0-0.982 0.571 0.699 0.765 2.037 0.232 3.079 0.199 5.324-0.226 0 0 0.59 0.37 1.415 0.691-5.033 2.157-11.39-0.125-7.437-1.23zM11.942 20.405c0 0-1.102 0.816 0.581 0.99 2.176 0.224 3.895 0.243 6.869-0.33 0 0 0.411 0.417 1.058 0.645-6.085 1.779-12.863 0.14-8.508-1.305zM17.127 15.63c1.24 1.428-0.326 2.713-0.326 2.713s3.149-1.625 1.703-3.661c-1.351-1.898-2.386-2.841 3.221-6.093 0 0-8.801 2.198-4.598 7.042zM23.783 25.302c0 0 0.727 0.599-0.801 1.062-2.905 0.88-12.091 1.146-14.643 0.035-0.917-0.399 0.803-0.953 1.344-1.069 0.564-0.122 0.887-0.1 0.887-0.1-1.020-0.719-6.594 1.411-2.831 2.021 10.262 1.664 18.706-0.749 16.044-1.95zM13.029 17.489c0 0-4.673 1.11-1.655 1.513 1.274 0.171 3.814 0.132 6.181-0.066 1.934-0.163 3.876-0.51 3.876-0.51s-0.682 0.292-1.175 0.629c-4.745 1.248-13.911 0.667-11.272-0.609 2.232-1.079 4.046-0.956 4.046-0.956zM21.412 22.174c4.824-2.506 2.593-4.915 1.037-4.591-0.382 0.079-0.552 0.148-0.552 0.148s0.142-0.222 0.412-0.318c3.079-1.083 5.448 3.193-0.994 4.887-0 0 0.075-0.067 0.097-0.126zM18.503 3.337c0 0 2.671 2.672-2.534 6.781-4.174 3.296-0.952 5.176-0.002 7.323-2.436-2.198-4.224-4.133-3.025-5.934 1.761-2.644 6.638-3.925 5.56-8.17zM13.503 28.966c4.63 0.296 11.74-0.164 11.908-2.355 0 0-0.324 0.831-3.826 1.49-3.952 0.744-8.826 0.657-11.716 0.18 0 0 0.592 0.49 3.635 0.685z"></path>
               </svg>
-              <span className = "text-base">Java</span>
+              <span className="text-base">Java</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M5.082 5.593c-0.564 0.564-0.423 1.213 0.564 2.679 0.508 0.761 1.1 1.946 1.326 2.623 0.226 0.705 0.677 1.664 0.987 2.143 0.564 0.79 0.564 0.959 0.197 2.397-0.226 0.902-0.31 2.031-0.197 2.736 0.169 1.185 1.128 2.905 1.72 3.102 0.508 0.169 1.241-0.733 1.269-1.551 0-0.705 0.028-0.733 0.338-0.226 0.536 0.874 2.228 2.735 2.369 2.594 0.056-0.056-0.31-0.79-0.846-1.607-0.508-0.846-1.1-1.946-1.325-2.454-0.31-0.846-0.423-0.902-0.79-0.508-0.226 0.226-0.508 0.874-0.592 1.466-0.226 1.354-0.733 1.523-1.128 0.367s-0.395-3.131 0-4.484c0.282-0.931 0.254-1.184-0.226-1.89-0.31-0.423-0.79-1.438-1.044-2.256-0.254-0.79-0.846-1.974-1.325-2.595-1.1-1.551-1.1-2.115 0.056-1.89 0.479 0.085 1.213 0.423 1.664 0.733 0.423 0.31 1.156 0.564 1.607 0.564 1.354 0 3.723 1.326 5.443 3.046 1.326 1.325 2.002 2.397 3.441 5.302 1.692 3.44 1.833 3.638 2.877 3.976 1.241 0.423 3.835 2.002 3.835 2.341 0 0.113-0.649 0.282-1.438 0.338-2.115 0.226-2.313 0.62-0.931 1.861 0.649 0.564 1.862 1.438 2.736 1.918l1.579 0.902-0.733-0.931c-0.423-0.508-1.297-1.297-1.974-1.72s-1.213-0.874-1.213-0.987c0-0.113 0.479-0.31 1.072-0.395 1.579-0.282 2.030-0.423 2.030-0.705 0-0.423-2.848-2.566-4.202-3.159-1.156-0.536-1.297-0.762-2.792-3.835-1.326-2.82-1.861-3.61-3.553-5.302-2.171-2.171-3.666-3.102-5.584-3.384-0.649-0.113-1.551-0.451-1.946-0.733-0.931-0.705-2.82-0.959-3.272-0.479z"></path>
               </svg>
-              <span className = "text-base">SQL</span>
+              <span className="text-base">SQL</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M22.797 14.562c-0.067-0.774-0.209-1.546-0.407-2.297-0.625-2.369-1.666-4.637-3.134-6.603-0.4-0.536-0.832-1.048-1.294-1.532-0.476-0.499-1.004-0.957-1.336-1.578-0.21-0.393-0.41-0.791-0.614-1.187-0.003 0.124-0.011 0.248-0.011 0.371-0-0.124 0.009-0.248 0.011-0.372-0.038-0.095-0.076-0.191-0.13-0.327-0.022 0.075-0.036 0.101-0.036 0.129-0.017 0.645-0.383 1.083-0.838 1.492-0.512 0.46-0.989 0.959-1.481 1.441 0.017 0.022 0.036 0.044 0.055 0.066-0.019-0.022-0.038-0.043-0.055-0.066-1.463 1.924-2.752 3.981-3.511 6.29-0.221 0.672-0.395 1.359-0.517 2.056-0.259 1.481-0.379 2.92-0.296 4.42 0.046 0.829 0.191 1.645 0.407 2.448 0.785 2.917 2.379 5.336 4.558 7.392 0.405 0.382 0.842 0.729 1.265 1.093 0.001-0.004 0.002-0.007 0.003-0.011-0.001 0.004-0.002 0.007-0.003 0.011 0.062 0.214 0.125 0.428 0.187 0.642 0.058 0.332 0.116 0.664 0.174 0.996 0.028 0.346 0.055 0.693 0.083 1.039-0.001 0.211-0.010 0.423 0.003 0.633 0.003 0.054 0.074 0.104 0.113 0.156 0.001-0.002 0.002-0.004 0.004-0.006-0.001 0.002-0.002 0.004-0.004 0.006 0.118 0.041 0.235 0.083 0.353 0.124 0.106 0.041 0.212 0.083 0.367 0.143-0.023-0.346-0.043-0.635-0.063-0.924-0.001-0.303-0.002-0.607-0.003-0.91-0.006 0.007-0.014 0.014-0.021 0.021 0.007-0.007 0.014-0.014 0.021-0.021 0.042-0.462 0.085-0.924 0.127-1.386 0.031-0.101 0.061-0.201 0.092-0.302 0.088-0.156 0.175-0.311 0.263-0.467 0.325-0.262 0.674-0.499 0.971-0.79 0.536-0.527 1.071-1.060 1.55-1.637 0.622-0.748 1.158-1.565 1.588-2.441 1.223-2.491 1.789-5.269 1.564-8.039-0.002-0.024-0.004-0.049-0.006-0.074z"></path>
               </svg>
-              <span className = "text-base">MongoDB</span>
+              <span className="text-base">MongoDB</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M15.998 28.895c-0.337 0-0.673-0.088-0.969-0.259l-3.086-1.826c-0.46-0.257-0.235-0.349-0.083-0.402 0.614-0.213 0.739-0.262 1.394-0.635 0.069-0.038 0.159-0.024 0.231 0.018l2.37 1.407c0.087 0.048 0.207 0.048 0.287 0l9.241-5.333c0.086-0.049 0.141-0.149 0.141-0.25v-10.665c0-0.104-0.055-0.202-0.143-0.255l-9.237-5.329c-0.086-0.050-0.199-0.050-0.285 0l-9.235 5.331c-0.090 0.051-0.146 0.152-0.146 0.253v10.666c0 0.102 0.056 0.198 0.145 0.247l2.532 1.462c1.374 0.687 2.215-0.122 2.215-0.935v-10.53c0-0.149 0.12-0.266 0.269-0.266h1.172c0.146 0 0.267 0.117 0.267 0.266v10.53c0 1.833-0.998 2.885-2.736 2.885-0.534 0-0.955 0-2.129-0.579l-2.423-1.395c-0.598-0.346-0.969-0.993-0.969-1.686v-10.665c0-0.693 0.371-1.339 0.969-1.684l9.242-5.34c0.585-0.331 1.362-0.331 1.942 0l9.241 5.34c0.599 0.346 0.971 0.992 0.971 1.684v10.665c0 0.693-0.372 1.337-0.971 1.686l-9.241 5.335c-0.296 0.171-0.631 0.259-0.973 0.259zM18.853 21.547c-4.045 0-4.892-1.857-4.892-3.414 0-0.148 0.118-0.266 0.266-0.266h1.195c0.133 0 0.245 0.096 0.265 0.226 0.18 1.216 0.717 1.831 3.164 1.831 1.946 0 2.775-0.441 2.775-1.473 0-0.596-0.234-1.037-3.26-1.334-2.528-0.25-4.093-0.809-4.093-2.831 0-1.865 1.572-2.977 4.207-2.977 2.961 0 4.425 1.027 4.611 3.233 0.007 0.075-0.020 0.148-0.071 0.205-0.051 0.054-0.121 0.086-0.196 0.086h-1.2c-0.124 0-0.233-0.088-0.259-0.209-0.288-1.28-0.988-1.689-2.886-1.689-2.126 0-2.373 0.74-2.373 1.295 0 0.673 0.292 0.869 3.161 1.248 2.84 0.375 4.19 0.907 4.19 2.902 0 2.014-1.678 3.167-4.606 3.167z"></path>
               </svg>
-              <span className = "text-base">Node.js</span>
+              <span className="text-base">Node.js</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center hidden">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M27.226 15.777c-0.15-0.168-2.221-2.761-2.586-3.201s-0.543-0.36-0.767-0.328c-0.225 0.033-2.845 0.473-3.149 0.524s-0.496 0.173-0.309 0.435c0.166 0.233 1.889 2.675 2.269 3.213l-6.849 1.641-5.447-9.107c-0.217-0.322-0.262-0.434-0.755-0.411s-4.273 0.336-4.542 0.359c-0.269 0.023-0.565 0.142-0.295 0.778s4.562 9.885 4.681 10.154 0.431 0.706 1.159 0.531c0.746-0.179 3.334-0.855 4.748-1.225 0.747 1.353 2.271 4.097 2.553 4.491 0.376 0.525 0.635 0.438 1.213 0.263 0.451-0.137 7.056-2.512 7.354-2.634s0.481-0.21 0.28-0.508c-0.148-0.219-1.89-2.553-2.803-3.774 0.625-0.166 2.848-0.758 3.085-0.822 0.276-0.075 0.314-0.21 0.164-0.379zM14.774 18.323c-0.082 0.017-3.918 0.936-4.123 0.982s-0.205 0.023-0.228-0.047-4.561-9.427-4.624-9.544-0.060-0.21 0-0.21c0.060 0 3.623-0.319 3.749-0.325s0.113 0.020 0.159 0.1c0 0 5.026 8.675 5.114 8.827s0.035 0.199-0.047 0.216zM25.59 20.35c0.061 0.096 0.122 0.157-0.070 0.227s-6.493 2.196-6.615 2.249c-0.122 0.053-0.219 0.070-0.376-0.158s-2.207-3.775-2.207-3.775l6.678-1.738c0.166-0.052 0.219-0.087 0.324 0.079s2.205 3.019 2.266 3.115zM26.018 15.609c-0.15 0.033-2.602 0.641-2.602 0.641l-2.006-2.752c-0.056-0.079-0.103-0.159 0.037-0.178s2.419-0.431 2.522-0.454c0.103-0.023 0.192-0.051 0.318 0.122s1.861 2.368 1.926 2.452-0.047 0.136-0.197 0.168z"></path>
               </svg>
-              <span className = "text-base">Laravel</span>
+              <span className="text-base">Laravel</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 34 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -371,15 +398,15 @@ function About() {
                 <path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path>
                 <path d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"></path>
               </svg>
-              <span className = "text-base">React</span>
+              <span className="text-base">React</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center hidden">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 viewBox="0 0 24 24"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -389,16 +416,16 @@ function About() {
                   <path d="M1 3h4l7 12 7-12h4L12 22 1 3zm8.667 0L12 7l2.333-4h4.035L12 14 5.632 3h4.035z"></path>
                 </g>
               </svg>
-              <span className = "text-base">Vue</span>
+              <span className="text-base">Vue</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center hidden">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 role="img"
                 viewBox="0 0 24 24"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -406,16 +433,16 @@ function About() {
                 <title></title>
                 <path d="M2.648 11.678c-1.038-1.81-1.249-3.504-.511-4.781.988-1.712 3.468-2.31 6.604-1.739a.322.322 0 1 1-.115.633c-2.9-.528-5.111.005-5.932 1.428-.605 1.047-.423 2.509.512 4.14a.322.322 0 1 1-.558.32zm14.92-6.069c1.835.024 3.156.596 3.751 1.626.82 1.419.18 3.595-1.718 5.837a.322.322 0 1 0 .49.416c2.054-2.426 2.771-4.866 1.785-6.575-.726-1.257-2.26-1.92-4.299-1.947a.322.322 0 1 0-.008.643zm-1.854 15.239a.322.322 0 0 0-.442.11c-.934 1.553-2.08 2.399-3.26 2.399-1.642 0-3.208-1.647-4.2-4.418a.322.322 0 1 0-.606.217C8.279 22.154 10.036 24 12.01 24c1.44 0 2.773-.982 3.813-2.71a.322.322 0 0 0-.11-.442zm7.356-2.594a1.54 1.54 0 0 1-2.436 1.25c-2.455 1.445-7.146.71-11.56-1.84-1.88-1.085-3.527-2.392-4.795-3.785a.322.322 0 1 1 .476-.433c1.222 1.343 2.817 2.609 4.64 3.661 4.167 2.406 8.553 3.12 10.797 1.906a1.54 1.54 0 1 1 2.878-.759zm-19.062 0a1.54 1.54 0 1 1-2.285-1.345c-.233-2.877 2.79-6.734 7.36-9.372 1.898-1.096 3.874-1.874 5.731-2.271a.322.322 0 0 1 .135.628c-1.79.384-3.703 1.137-5.545 2.2-4.304 2.485-7.148 6.067-7.048 8.627.038-.003.075-.006.113-.006.85 0 1.54.69 1.54 1.54zM10.472 1.54a1.54 1.54 0 0 1 3.078 0c0 .023-.002.045-.003.067 2.549 1.317 4.32 5.81 4.32 11.003 0 2.135-.298 4.184-.854 5.96a.322.322 0 1 1-.614-.192c.536-1.712.825-3.697.825-5.768 0-4.89-1.626-9.095-3.847-10.363a1.538 1.538 0 0 1-2.905-.707zm1.304 9.981a1.114 1.114 0 1 0 .47 2.178 1.114 1.114 0 0 0-.47-2.178z"></path>
               </svg>
-              <span className = "text-base">Electron.js</span>
+              <span className="text-base">Electron.js</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 role="img"
                 viewBox="0 0 24 24"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -423,25 +450,25 @@ function About() {
                 <title></title>
                 <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
               </svg>
-              <span className = "text-base">TailwindCss</span>
+              <span className="text-base">TailwindCss</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 version="1.1"
                 viewBox="0 0 32 32"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M26.852 15.281l-9.848-9.848c-0.567-0.567-1.487-0.567-2.054 0l-2.045 2.045 2.594 2.594c0.603-0.204 1.294-0.067 1.775 0.413 0.483 0.483 0.619 1.181 0.41 1.786l2.5 2.5c0.605-0.209 1.303-0.074 1.786 0.41 0.675 0.675 0.675 1.769 0 2.444s-1.769 0.675-2.445 0c-0.508-0.508-0.633-1.254-0.376-1.88l-2.332-2.332v6.136c0.164 0.082 0.32 0.19 0.457 0.327 0.675 0.675 0.675 1.769 0 2.445-0.675 0.675-1.77 0.675-2.444 0-0.675-0.676-0.675-1.77 0-2.445 0.167-0.167 0.36-0.293 0.566-0.377v-6.193c-0.206-0.084-0.399-0.209-0.566-0.377-0.511-0.511-0.634-1.262-0.372-1.889l-2.557-2.558-6.753 6.752c-0.567 0.568-0.567 1.488 0 2.055l9.849 9.848c0.567 0.567 1.486 0.567 2.054 0l9.802-9.802c0.567-0.567 0.567-1.488 0-2.055z"></path>
               </svg>
-              <span className = "text-base">Git</span>
+              <span className="text-base">Git</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -452,22 +479,22 @@ function About() {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                className = "h-20 w-20"
+                className="h-20 w-20"
               >
                 <path d="M174.73 122c-.23 18.52 18 34.84 36.58 32.68 11.22-1.31 15.93 4.34 12.16 14.81q-12.27 34.08-24.75 68.08c-5.59 15.16-17.95 20.85-33.24 15.29Q91.77 226.09 18.1 199.14c-16.19-5.93-21.7-17.82-15.8-34.09q26.81-74 53.77-147.91C61.36 2.63 73.92-3.39 88.49 1.89q74.7 27 149.29 54.36c14.63 5.36 20.26 17.92 15.06 32.54-1.22 3.45-2.42 6.92-3.8 10.31-3.5 8.58-10.91 10.24-17.16 3.37-7.21-7.93-16.3-10.72-26.41-10.74A30.4 30.4 0 0 0 174.73 122zm-7.83.33a38.84 38.84 0 0 1 48.49-37.3c8.17 2.06 15.94 4.8 21.58 11.62 1.95 2.35 4 2.48 5.12-.83a141.88 141.88 0 0 0 4.51-13.72c1.64-7-1.74-13.76-8.14-17.12a52.12 52.12 0 0 0-6.46-2.71q-72.69-26.54-145.42-53c-11-4-19.3-.13-23.42 11-5.57 15-11 30-16.42 45Q28.15 116.38 9.61 167.54c-4.45 12.34-.88 19.93 11.29 24.4 25.93 9.52 51.93 18.87 77.89 28.33 23.14 8.43 46.4 16.56 69.33 25.52 10.28 4 19.95-.74 23.66-11.37 7.9-22.63 16.31-45.08 24.47-67.61 1.51-4.17.82-4.47-3.77-4.69-5.88-.27-12-.55-17.53-2.26-16.35-5.02-28.26-21.42-28.05-37.51zM141 360.14h-20.76v-30.5H94.68v30.41h-21v-78.46h20.66v28.75h25.79v-28.69H141zM177 334.46v25.64h-20.86v-77.51c13.85-1.67 27.6-3.39 41.22.13 12.49 3.22 18.93 12.13 18.63 24.41-.31 12.75-7.59 21.92-20.46 24.86-5.79 1.33-11.82 1.61-18.53 2.47zm-.06-16.84c2.56 0 4.36.16 6.13 0 4.82-.49 9.81-1.79 11-6.92.77-3.26.18-7.87-1.7-10.51-3.07-4.31-8.56-3.64-13.37-3-.81.11-2 1.73-2 2.68-.19 5.61-.09 11.23-.09 17.75zM23.61 334.49v25.66H3.13c-.14-1.45-.37-2.72-.37-4 0-23 .09-45.93-.11-68.89 0-4 1.31-5.37 5-5.36 10.94 0 22-1 32.8.15 13.76 1.4 21.78 10.67 22.3 23.31.56 13.37-7.19 23.64-20.67 26.64-5.78 1.31-11.77 1.63-18.47 2.49zm.14-16.72c3.6-.28 6.4-.27 9.1-.75 4.43-.8 8.18-3.3 8.46-7.85.19-3.23-.81-8.3-3-9.53-3.67-2.07-8.69-1.83-13.16-2.32-.37 0-1.33 1.74-1.35 2.69-.11 5.6-.05 11.2-.05 17.76zM227.89 281.57h16.7c.1 2 .24 3.77.25 5.54 0 12.83-.13 25.66.08 38.48a48.38 48.38 0 0 0 1.71 12.28c1.82 6.37 6.31 9.42 12.54 9.44 6.48 0 11.18-3.17 12.88-9.66a54.55 54.55 0 0 0 1.61-12.81c.2-12.49.07-25 .07-37.48v-5.72h17.84c0 4.54.05 8.81 0 13.09-.18 12.82.1 25.67-.75 38.44-.8 12.1-6.25 22.12-18.39 26.15-12.34 4.09-24.7 4.05-35.42-4.94a24.83 24.83 0 0 1-8.94-18.38c-.56-18-.18-35.94-.18-54.43zM306.64 303c4.11 0 8.37-.62 12.29.28 1.75.39 2.81 3.81 4.39 6.18.74-.62 2-1.75 3.37-2.84 12.42-10.16 30.17-4.36 32.88 11.41 1.57 9.09 1 18.56 1.23 27.86.14 4.62 0 9.25 0 14.21h-17.86v-23.47c0-3.83.06-7.68-.33-11.48-.62-6-3.91-9.12-8.79-8.94a9.58 9.58 0 0 0-9.32 9.34c-.36 8.64-.2 17.31-.24 26v8.63h-17.6zM439.59 346.91c0 3.77.29 7.1-.15 10.33-.18 1.31-1.86 3.28-3.05 3.43a48.52 48.52 0 0 1-12.38.38c-7.62-1-12.21-5.22-13.22-12.85-1-7.22-.78-14.59-1-21.89-.1-3.14 0-6.28 0-9.76l-7.4-.75v-12.35l7.12-.79c.18-3.36.35-6.77.54-10.45l17.06-4.67V303h12.57v13h-11.91c0 9-.18 17.44.09 25.84.11 3.21 2.51 4.94 5.8 5.06 1.64.1 3.34.01 5.93.01zM375.34 360.13v-56.78h17.25v56.78z"></path>
                 <path d="M188.89 123a18.53 18.53 0 1 1 18.21 18.66A18.44 18.44 0 0 1 188.89 123zm27.87 0a9.37 9.37 0 0 0-9.31-9.16 9.29 9.29 0 1 0 .27 18.57 9.33 9.33 0 0 0 9.04-9.47zM384.29 277.25a9.54 9.54 0 0 1 9.18 9.34 9.32 9.32 0 1 1-9.18-9.34zM310.5 178.72l10.8 10-7 7.48-10.45-9.72zM262.52 143.6l12.48 7.84-5.64 8.61-12-7.57zM324.43 206.58l7.45-7.13c3.32 3.77 6.43 7.3 9.85 11.2l-7.88 6.52zM351.2 222.25l8.8 11.84-8.29 5.91c-2.88-3.81-5.6-7.42-8.66-11.49zM287.28 160l11.87 9.09-6.58 8-11.17-8.57zM375.92 259.22l-8.74 5.24-7.51-12.21 8.67-5.71zM244.52 145.25l-12.79-6.47c1.51-3.05 2.87-5.78 4.54-9.14l13.2 6.51z"></path>
                 <path d="M166.9 122.35c-.21 16.09 11.7 32.49 28 37.51 5.56 1.71 11.65 2 17.53 2.26 4.59.22 5.28.52 3.77 4.69-8.16 22.53-16.57 45-24.47 67.61-3.71 10.63-13.38 15.38-23.66 11.37-22.93-9-46.19-17.09-69.33-25.52-26-9.46-52-18.81-77.89-28.33-12.17-4.47-15.74-12.06-11.29-24.4Q28 116.33 46.77 65.24c5.46-15 10.85-30.07 16.42-45C67.31 9.12 75.66 5.26 86.61 9.25q72.73 26.46 145.42 53a52.12 52.12 0 0 1 6.43 2.75c6.4 3.36 9.78 10.1 8.14 17.12a141.88 141.88 0 0 1-4.51 13.72c-1.15 3.31-3.17 3.18-5.12.83-5.64-6.82-13.41-9.56-21.58-11.62a38.84 38.84 0 0 0-48.49 37.3z"></path>
               </svg>
-              <span className = "text-base">PHP Unit</span>
+              <span className="text-base">PHP Unit</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center hidden">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 role="img"
                 viewBox="0 0 24 24"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -475,16 +502,16 @@ function About() {
                 <title></title>
                 <path d="M22.251 11.82a3.117 3.117 0 0 0-2.328-3.01L22.911 0H8.104L11.1 8.838a3.116 3.116 0 0 0-2.244 2.988c0 1.043.52 1.967 1.313 2.536a8.279 8.279 0 0 1-1.084 1.244 8.14 8.14 0 0 1-2.55 1.647c-.834-.563-1.195-1.556-.869-2.446a3.11 3.11 0 0 0-.91-6.08 3.117 3.117 0 0 0-3.113 3.113c0 .848.347 1.626.903 2.182-.048.097-.097.195-.146.299-.465.959-.993 2.043-1.195 3.259-.403 2.432.257 4.384 1.849 5.489A5.093 5.093 0 0 0 5.999 24c1.827 0 3.682-.917 5.475-1.807 1.279-.632 2.599-1.292 3.898-1.612.48-.118.98-.187 1.508-.264 1.07-.153 2.175-.312 3.168-.89a4.482 4.482 0 0 0 2.182-3.091c.174-.994 0-1.994-.444-2.87.298-.48.465-1.042.465-1.647zm-1.355 0c0 .965-.785 1.75-1.75 1.75a1.753 1.753 0 0 1-1.085-3.126l.007-.007c.056-.042.118-.084.18-.125 0 0 .008 0 .008-.007.028-.014.055-.035.083-.05.007 0 .014-.006.021-.006.028-.014.063-.028.097-.042.035-.014.07-.027.098-.041.007 0 .013-.007.02-.007.028-.007.056-.021.084-.028.007 0 .02-.007.028-.007.034-.007.062-.014.097-.02h.007l.104-.022c.007 0 .02 0 .028-.007.028 0 .055-.007.083-.007h.035c.035 0 .07-.007.111-.007h.09c.028 0 .05 0 .077.007h.014c.055.007.111.014.167.028a1.766 1.766 0 0 1 1.396 1.723zM10.043 1.39h10.93l-2.509 7.4c-.104.02-.208.055-.312.09l-2.64-5.385-2.648 5.35c-.104-.034-.216-.055-.327-.076l-2.494-7.38zm4.968 9.825a3.083 3.083 0 0 0-.938-1.668l1.438-2.904 1.452 2.967c-.43.43-.743.98-.868 1.605H15.01zm-3.481-1.098c.034-.007.062-.014.097-.02h.02c.029-.008.056-.008.084-.015h.028c.028 0 .049-.007.076-.007h.271c.028 0 .049.007.07.007.014 0 .02 0 .035.007.027.007.048.007.076.014.007 0 .014 0 .028.007l.097.02h.007c.028.008.056.015.083.029.007 0 .014.007.028.007.021.007.049.014.07.027.007 0 .014.007.02.007.028.014.056.021.084.035h.007a.374.374 0 0 1 .09.049h.007c.028.014.056.034.084.048.007 0 .007.007.013.007.028.014.05.035.077.049l.007.007c.083.062.16.132.236.201l.007.007a1.747 1.747 0 0 1 .48 1.209 1.752 1.752 0 0 1-3.502 0 1.742 1.742 0 0 1 1.32-1.695zm-6.838-.049c.966 0 1.751.786 1.751 1.751s-.785 1.751-1.75 1.751-1.752-.785-1.752-1.75.786-1.752 1.751-1.752zm16.163 6.025a3.07 3.07 0 0 1-1.508 2.133c-.758.438-1.689.577-2.669.716a17.29 17.29 0 0 0-1.64.291c-1.445.355-2.834 1.05-4.182 1.717-1.724.854-3.35 1.66-4.857 1.66a3.645 3.645 0 0 1-2.154-.688c-1.529-1.056-1.453-3.036-1.272-4.12.167-1.015.632-1.966 1.077-2.877.028-.055.049-.104.077-.16.152.056.312.098.479.126-.264 1.473.486 2.994 1.946 3.745l.264.139.284-.104c1.216-.431 2.342-1.133 3.336-2.071a9.334 9.334 0 0 0 1.445-1.716c.16.027.32.034.48.034a3.117 3.117 0 0 0 3.008-2.327h1.167a3.109 3.109 0 0 0 3.01 2.327c.576 0 1.11-.16 1.57-.43.18.52.236 1.063.139 1.605z"></path>
               </svg>
-              <span className = "text-base">Jest</span>
+              <span className="text-base">Jest</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 role="img"
                 viewBox="0 0 24 24"
-                className = "h-20 w-20"
+                className="h-20 w-20"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -492,9 +519,9 @@ function About() {
                 <title></title>
                 <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"></path>
               </svg>
-              <span className = "text-base">VS Code</span>
+              <span className="text-base">VS Code</span>
             </li>
-            <li className = "flex flex-col p-2 items-center">
+            <li className="flex flex-col p-2 items-center">
               <a className="text-yellow-200" href="/portfolio">
                 <svg
                   stroke="currentColor"
@@ -509,7 +536,7 @@ function About() {
                     <path d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
                   </g>
                 </svg>
-                <span className = "text-xl">More</span>
+                <span className="text-xl">More</span>
               </a>
             </li>
           </ul>

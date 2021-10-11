@@ -6,3 +6,11 @@ h1 {
 .indent-2 {
     text-indent: 2em;
 }
+
+.indent-1 {
+    text-indent: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+}

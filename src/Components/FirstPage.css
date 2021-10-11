@@ -1,18 +1,32 @@
 .footer {
-    --tw-bg-opacity: 1;
-    background-color: rgba(45,48,71,var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(45, 48, 71, var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .content {
+    flex: 0 0 80%;
+  }
 }
 
 .main {
-    --tw-bg-opacity : 1;
-    background-color: rgba(65,69,102,var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(65, 69, 102, var(--tw-bg-opacity));
 }
 
-ol, ul {
-    list-style: none;
+@media (max-width: 480px) {
+  .main {
+    margin-top: 4.55rem;
+    border-radius: 0;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }

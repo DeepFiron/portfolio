@@ -12,11 +12,11 @@ import Contact from "./Contact";
 
 function FirstPage() {
   return (
-    <div class="justify-center flex flex-col w-10/12 -my-0 mx-auto">
+    <div class="justify-center flex flex-col lg:w-10/12 my-0 mx-auto">
       <div class="m-0 p-0 flex justify-center">
         <BrowserRouter>
           <SideNav />
-          <div className="rounded-tr-2xl p-2 text-white main relative">
+          <div className="rounded-tr-2xl p-2 text-white main relative content">
             <Switch>
               <Route path="/" component={About} exact />
               <Route path="/portfolio" component={Portfolio} />
