@@ -1,8 +1,19 @@
-h1 {
+@media (max-width: 1024px) {
+  .aboutHeader {
+    text-align: center;
+    position: relative;
+    top: -58px;
+    z-index: 9;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutHeader {
     text-orientation: upright;
     writing-mode: tb;
+  }
 }
 
 .indent-2 {
-    text-indent: 2em;
+  text-indent: 2em;
 }

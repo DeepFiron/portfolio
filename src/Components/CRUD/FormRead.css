@@ -1,0 +1,19 @@
+.update-button {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 253, 130, var(--tw-bg-opacity));
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(45, 48, 71, var(--tw-text-opacity));
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 253, 130, var(--tw-border-opacity));
+    cursor: pointer;
+  }
+
+.delete-button {
+    background-color: red;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(45, 48, 71, var(--tw-text-opacity));
+    border-color: black;
+    cursor: pointer;
+  }

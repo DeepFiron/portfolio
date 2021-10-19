@@ -14,10 +14,10 @@
   background-color: rgba(65, 69, 102, var(--tw-bg-opacity));
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .main {
-    margin-top: 4.55rem;
     border-radius: 0;
+    text-align: left;
   }
 }
 

@@ -1,6 +1,18 @@
-h1 {
+@media (max-width: 1024px) {
+    .portfolioHeader {
+      text-align: center;
+      position: relative;
+      top: -58px;
+      z-index: 9;
+    }
+  }
+  
+
+@media (min-width: 1024px) {
+  .portfolioHeader {
     text-orientation: upright;
     writing-mode: tb;
+  }
 }
 
 .indent-2 {
@@ -11,6 +23,6 @@ h1 {
     text-indent: 1rem;
 }
 
-ul {
+.resps {
     list-style-type: disc;
 }

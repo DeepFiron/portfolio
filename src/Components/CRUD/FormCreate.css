@@ -1,0 +1,16 @@
+.contact-form {
+  background-color: rgba(45, 48, 71, var(--tw-bg-opacity));
+  border-color: rgba(255, 253, 130, var(--tw-border-opacity));
+}
+
+.contact-button {
+  padding: 0.5rem 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 253, 130, var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(45, 48, 71, var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 253, 130, var(--tw-border-opacity));
+  cursor: pointer;
+}
