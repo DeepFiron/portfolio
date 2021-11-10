@@ -3,14 +3,18 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import "./FormRead.css";
 
+import ExportToExcel from "./ExportToExcel";
+import ImportFromExcel from "./ImportFromExcel";
+// import ImportFromExcelOld from "./ImportFromExcelOld";
+
 const FormRead = () => {
+  const fakeUrl = "https://616d67e76dacbb001794c9fa.mockapi.io/contact";
+  const fileName = "data";
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
-    axios
-      .get(`https://616d67e76dacbb001794c9fa.mockapi.io/contact`)
-      .then((response) => {
-        setAPIData(response.data);
-      });
+    axios.get(fakeUrl).then((response) => {
+      setAPIData(response.data);
+    });
   }, []);
 
   const setData = (data) => {
@@ -22,19 +26,15 @@ const FormRead = () => {
   };
 
   const onDelete = (id) => {
-    axios
-      .delete(`https://616d67e76dacbb001794c9fa.mockapi.io/contact/${id}`)
-      .then(() => {
-        getData();
-      });
+    axios.delete(`${fakeUrl}/${id}`).then(() => {
+      getData();
+    });
   };
 
   const getData = () => {
-    axios
-      .get(`https://616d67e76dacbb001794c9fa.mockapi.io/contact`)
-      .then((getData) => {
-        setAPIData(getData.data);
-      });
+    axios.get(fakeUrl).then((getData) => {
+      setAPIData(getData.data);
+    });
   };
 
   return (
@@ -46,6 +46,9 @@ const FormRead = () => {
         <h2 className="text-2xl md:text-4xl font-bold pb-2 text-yellow-200 text-center mt-4 lg:mt-8">
           React CRUD Operations - Read
         </h2>
+        <ExportToExcel apiData={APIData} fileName={fileName} />
+        <ImportFromExcel/>
+        {/* <ImportFromExcelOld/> */}
         <table className=" my-2 md:my-4 text-sm md:text-base md:indent-2 border-collapse table-auto mx-auto">
           <tr>
             <th className="border px-1 border-gray-400">Name</th>
