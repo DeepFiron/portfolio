@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import * as FileSaver from "file-saver";
 import * as XLSX from "xlsx";
 
@@ -7,20 +7,21 @@ const ExportToExcel = ({ apiData, fileName }) => {
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
   const fileExtension = ".xlsx";
 
-  const dataWithoutId = ((apiData) => {
-    let newArray = [];
+  // In case we need Datat without ID
+  // const dataWithoutId = ((apiData) => {
+  //   let newArray = [];
 
-    apiData.map((item) => {
-      // here i am  extracting only userId and title
-      let obj = { name: item.name, email: item.email, description:item.description };
-      // after extracting what I need, I am adding it to newArray
-      newArray.push(obj);
-    });
+  //   apiData.map((item) => {
+  //     // here i am  extracting only userId and title
+  //     let obj = { name: item.name, email: item.email, description:item.description };
+  //     // after extracting what I need, I am adding it to newArray
+  //     newArray.push(obj);
+  //   });
     
-      // now  I am adding newArray to localstate in order to passing it via props for exporting
-    //   setAPIData(newArray);
-      return newArray;
-  });
+  //     // now  I am adding newArray to localstate in order to passing it via props for exporting
+  //   //   setAPIData(newArray);
+  //     return newArray;
+  // });
 
   const exportToCSV = (apiData, fileName) => {
     const ws = XLSX.utils.json_to_sheet(apiData);

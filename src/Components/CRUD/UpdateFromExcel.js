@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import * as XLSX from "xlsx";
+import axios from "axios";
 
-function ImportFromExcel() {
-  const [items, setItems] = useState([]);
-  const [visible, setVisible] = useState("hidden");
+function UpdateFromExcel(props) {
+
+  const ids = props.apiData.map((data) => data.id);
 
   const readExcel = (file) => {
     const promise = new Promise((resolve, reject) => {
@@ -22,10 +23,26 @@ function ImportFromExcel() {
       };
     });
     promise.then((d) => {
-      //   console.log(d);
-      setItems(d);
-      setVisible("visible");
+      d.map((d) => {
+        updateapiData(d);
+      });
     });
+  };
+
+  const updateapiData = (d) => {
+    const data = {
+      name: d.name,
+      email: d.email,
+      description: d.description,
+    };
+    if (!d.id) {
+      axios.post(`https://616d67e76dacbb001794c9fa.mockapi.io/contact`, data);
+    } else if(ids.includes(d.id)) {
+      axios.put(
+        `https://616d67e76dacbb001794c9fa.mockapi.io/contact/${d.id}`,
+        data
+      );
+    }
   };
 
   return (
@@ -40,26 +57,8 @@ function ImportFromExcel() {
           readExcel(file);
         }}
       />
-      <table class="table table-dark table-striped">
-        <thead>
-          <tr style={{visibility: visible}}>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map((d) => (
-            <tr key = {d.id}>
-              <th scope="row">{d.name}</th>
-              <td>{d.email}</td>
-              <td>{d.description}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </>
   );
 }
 
-export default ImportFromExcel;
+export default UpdateFromExcel;
